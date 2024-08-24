@@ -1,0 +1,3143 @@
+/*
+  @Theme Name:- School ERP 
+  @author Name:- Deepak Kumawat 
+*/
+$bg-color: #ececed;
+$primary-color: #009ae0;
+$primary-bg: #96b1e5;
+$light-primary-bg: #e6efff;
+$tab-btn-bg: #6789ca;
+$secondary-color: #777;
+$dark-secondary-color: #3a3a3a;
+$white-color: #fff;
+$btn-color:#009ae0;
+
+body{
+  background:$bg-color!important;
+  user-select:none;
+  font-family: "Source Sans Pro" !important;
+  -webkit-print-color-adjust: exact; 
+
+}
+.Timetable .days {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e1e3e8;
+  border-radius: 20px;
+  background: #fff;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.bg_image {
+  position:relative;
+  &:before {
+    content:"";
+    background: url(../svg/vector_design.svg) no-repeat bottom;
+    margin-bottom: 10px;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+}
+
+select,
+input{
+  height:45px!important;
+}
+.table .table-header{
+  background:#FEC107;
+  color:#fff;
+}
+.table .table-header .cell{
+  padding:20px;
+}
+@media screen and (max-width: 640px){
+
+  .table .table-header .cell{
+      padding:20px 5px;
+  }
+}
+.user{
+  margin-left:15px;
+  color:#fff;
+  h6{
+    margin-bottom:0px;
+  }
+}
+.card_box{
+  padding:10px;
+  background:#fff;
+  border-radius:8px;
+  font-family: "Source Sans Pro";
+
+}
+.form_heading{
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: "Source Sans Pro";
+}
+.notificationdesign{
+  .notification-list {
+    padding: 0;
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        margin: 0 0 15px 0;
+        display: block;
+        padding: 0px;
+        text-align: left;
+        .card {
+          padding: 12px 12px;
+          border-radius: 8px;
+          margin: 0;
+          box-shadow: 0 0 0px rgb(0 0 0);
+          background: #fff;
+
+      }
+      .item-title {
+        margin: 0 0 6px;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 500;
+        i {
+          font-size: 14px;
+          margin-right: 5px;
+      }
+      
+    }
+    .item-text {
+      font-size: 14px;
+      margin-bottom: 8px;
+      line-height: 16px;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      // display: -webkit-box;
+      overflow: hidden;
+  }
+  .item-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #787878;
+}
+.time{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.time i {
+  font-size: 16px;
+  margin-right: 3px;
+}
+.mark {
+  font-weight: 500;
+  background: transparent;
+}
+.text-primary {
+  color: #0936c3!important;
+}
+    }
+  }
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+}
+.notification_design{
+  position:relative;
+  span{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #0dcaf0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #fff;
+  }
+}
+.profile_design{
+  padding:20px;
+  justify-content: center;
+}
+.profile_content{
+  
+.form-details-sign-in {
+  border-radius: 8px;
+  background: rgba(102, 102, 102, 0.08);
+  padding: 12px 12px 12px 50px;
+  display: flex;
+}
+.heading_content {
+  align-items: center;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 11;
+}
+.icon_set{
+  position: absolute;
+    left: 16px;
+    top: 13px;
+    font-size: 20px;
+}
+
+}
+.dashboard_home{
+  
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* menu toggle */
+
+.menu-toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: not-allowed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: #000;
+  box-shadow: 0 8px 0 #000,
+              0 -8px 0 #000;
+}
+
+/* profile menu */
+
+.profile {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-align: end;
+}
+
+.profile h3 {
+  text-align: end;
+  line-height: 1;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.profile p {
+  line-height: 1;
+  font-size: 14px;
+  opacity: .6;
+}
+
+.profile .img-box {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* menu (the right one) */
+
+.menu {
+  position: absolute;
+  top: calc(100% + 24px);
+  border-radius: 15px;
+  right: 4px;
+  width: 150px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: 300ms;
+  z-index: 9999;
+  top: 63px;
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.menu.active {
+  opacity: 1;
+  margin-bottom: 0px;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* menu links */
+
+.menu ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  padding-left: 0px;
+  background: #fff;
+  margin-bottom: 0px;
+  border-radius: 13px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.menu ul li:hover {
+  background: #eee;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.menu ul li a i {
+  font-size: 1.2em;
+}
+}
+.teacher-profileeee {
+  height: 100px !important;
+  width: 100px !important;
+  border-radius: 50%;
+  margin-right: 250px !important;
+}
+.notificationcount{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.mg {
+  display: flex !important;
+  text-align: left;
+}
+
+
+.two h4 {
+  padding: 5px;
+}
+
+.tt {
+  display: flex;
+  padding: 10px;
+}
+
+.mid {
+  justify-content: center;
+  align-items: center;
+  margin: auto !important;
+  margin-left: 310px !important;
+}
+
+.mid p {
+  font-size: 25px;
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+}
+
+
+
+
+.profilebtn {
+  border: none;
+  outline: none;
+  background: transparent !important;
+  border: none;
+  outline: none;
+  padding: 0px !important;
+  border: none !important;
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+.background-custum {
+  align-items:center;
+  a{
+    display:flex;
+  }
+  .list {
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0px;
+    background: transparent;
+  }
+}
+
+.bg-image-new {
+  background-image: url('../images/bgnotification.png');
+  background-size: cover;
+  width: 100%;
+  height: 186px;
+}
+
+.meetingtime {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 100%;
+
+  h1 {
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 0px;
+    padding: 5px 0px;
+    background: #767be7;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card_time {
+    margin-top: 45px;
+    padding: 0px 10px;
+  }
+
+  .discriptiondetails {
+    position: relative;
+    margin-top: 8px;
+
+    h6 {
+      position: absolute;
+      top: -8px;
+      left: 9px;
+      background: #f3f3f3;
+    }
+  }
+}
+
+
+
+
+.MuiIconButton-root {
+  color: #fff !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.heading_right {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between;
+  .heading_right {
+  .user{
+   h3{
+    font-size:16px;
+   }
+  }
+  }
+}
+
+.text-light {
+  color: #fff !important;
+}
+
+// .round_bg {
+//   border-radius: 10px !important;
+//   background:linear-gradient(45deg, #f3f3f3, #383cbb) !important;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+//   animation: scaleIn 0.8s ease !important;
+// }
+
+// @keyframes scaleIn {
+//   from {
+//     transform: scale(0.8);
+//   }
+//   to {
+//     transform: scale(1);
+//   }
+// }
+
+.due_fees {
+  margin-bottom: 20px !important;
+}
+
+
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+
+
+.signin {
+  text-align: center !important;
+  margin-top: 10px !important;
+}
+
+/* Hover effect for fee_card */
+.fee_card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Add any other styles based on your design preferences */
+
+
+
+.heading_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:$primary-color;
+  animation: fadeIn 1s ease;
+  padding: 10px 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.heading_right {
+  display: flex;
+  align-items: center;
+}
+
+.text-light {
+  color: #fff;
+}
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.due_fees {
+  margin-bottom: 20px;
+}
+
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+
+.signin {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Hover effect for fee_card */
+.fee_card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add any other styles based on your design preferences */
+
+
+
+.imgteacher {
+  width: 100px;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.cardnew {
+  margin-left: 15px;
+}
+
+.faculty {
+  text-align: left;
+
+  .facultynamede {
+    margin-bottom: 15px;
+    justify-content: space-between;
+
+    .teacher-id,
+    .teacher-name {
+      font-size: 15px;
+      font-weight: bold;
+      width: 64px;
+    }
+
+    p {
+      width: 121px;
+      font-size: 13px;
+      color: #414141;
+      margin-left: 13px;
+
+    }
+
+  }
+}
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.heading_right {
+  display: flex;
+  align-items: center;
+}
+
+.text-light {
+  color: #fff;
+}
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.due_fees {
+  margin-bottom: 20px;
+}
+
+
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mybutton {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mybutton:hover {
+  background-color: #2980b9;
+}
+
+.signin {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Hover effect for fee_card */
+.fee_card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add any other styles based on your design preferences */
+
+
+
+
+.heading_right {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.text-light {
+  color: #fff !important;
+}
+
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.due_fees {
+  margin-bottom: 20px !important;
+}
+
+
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+
+
+.signin {
+  text-align: center !important;
+  margin-top: 10px !important;
+}
+
+/* Add the following styles to your existing CSS or create a new CSS file */
+
+
+
+.heading_right {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.text-light {
+  color: #fff !important;
+}
+
+// .round_bg {
+//   border-radius: 10px !important;
+//   background-color: #ffffff !important;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+//   animation: scaleIn 0.8s ease !important;
+// }
+
+// @keyframes scaleIn {
+//   from {
+//     transform: scale(0.8);
+//   }
+//   to {
+//     transform: scale(1);
+//   }
+// }
+
+.due_fees {
+  margin-bottom: 20px !important;
+}
+
+
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+
+.mybutton:hover {
+  background-color: #0056b3 !important;
+}
+
+.signin {
+  text-align: center !important;
+  margin-top: 10px !important;
+}
+
+/* Hover effect for fee_card */
+.fee_card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add any other hover effects based on your design preferences */
+/* Add the following styles to your existing CSS or create a new CSS file */
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.heading_right {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.text-light {
+  color: #fff !important;
+}
+
+// .round_bg {
+//   border-radius: 10px !important;
+//   background: linear-gradient(45deg, #d9d7d7, #3447a5) !important;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+//   animation: scaleIn 0.8s ease !important;
+//   margin-bottom: 15px;
+// }
+
+// @keyframes scaleIn {
+//   from {
+//     transform: scale(0.8);
+//   }
+//   to {
+//     transform: scale(1);
+//   }
+// }
+
+.due_fees {
+  margin-bottom: 20px !important;
+}
+
+
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+
+.mybutton:hover {
+  background-color: #0056b3 !important;
+}
+
+.signin {
+  text-align: center !important;
+  margin-top: 10px !important;
+}
+
+/* Hover effect for fee_card */
+.fee_card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add any other hover effects based on your design preferences */
+
+
+///////////////////
+/// 
+/// 
+/// 
+/// 
+/// 
+/// 
+/// 
+/// 
+
+
+.box_shadow_custum {
+  box-shadow: 0px 0px 3px 0px rgb(255 255 255 / 50%);
+  position: relative;
+  padding: 10px;
+}
+
+.teacher-name {
+  color: #000 !important;
+}
+
+table,
+tr,
+th,
+td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.teacherprofile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    /* Adjust the width as needed */
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.teacher-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.list {
+  text-decoration: underline;
+}
+
+
+
+.teacher-info {
+  flex: 1;
+}
+
+.teacher-name,
+.teacher-id {
+  margin: 0;
+}
+
+.faculty_profile {
+  height: 41px;
+}
+
+
+/* Media query for responsive design */
+@media screen and (max-width: 600px) {
+  .teacher-profile-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+.top {
+  display: flex;
+  justify-content:
+    space-around;
+  padding-right: 150px;
+  align-items: center;
+}
+
+.top1 {
+  display: flex;
+  justify-content:
+    space-around;
+  padding-right: 10px;
+}
+
+
+//  .teacherprofile img{
+//   width: 120px; height: 120px;
+//   margin-left: 250px;
+//  }
+
+
+.heading_right {
+  display: flex;
+}
+
+
+
+.App {
+  text-align: center;
+}
+
+.profile {
+  max-width: 800px;
+  margin: 0px auto 0px;
+}
+
+h2 {
+  padding-left: 25px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* Additional styles for the header row */
+
+
+/* Add some spacing between header items */
+
+
+/* Media query for responsive design */
+@media screen and (max-width: 600px) {
+  .teacher-profile-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+
+.colorbg {
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  img {
+    width: 50px;
+  }
+
+  &:hover {
+    border: none !important
+  }
+}
+
+.dropdown {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./source-sans-pro-font/SourceSansPro-Regular.woff") format("woff2"),
+    url("./source-sans-pro-font/SourceSansPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+element.style {
+  padding-bottom: 10px;
+}
+
+/* Holiday.css */
+
+.nodataavl  img{
+  width:300px;
+}
+
+.holidaylist{
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding:10px;
+  small{
+    font-size: 12px;
+    color: #838383;
+}
+.details_para{
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
+  margin: 5px 0px 10px;
+}
+p{
+  font-size: 13px;
+    color: #838383;
+}
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+p.teacher-id {
+  font-weight: bold;
+  color: #333;
+}
+
+p.teacher-name {
+  color: #0066cc;
+}
+
+p.teacher-profile-image {
+  color: #999;
+}
+
+/*--------------------------- Home page css------------- */
+
+.App {
+
+  .App-logo {
+    max-width: 150px;
+  }
+
+  .hero {
+    position: relative;
+    z-index: 1;
+  }
+
+  .Login-form {
+    background: $white-color;
+    position: absolute;
+    top: -80%;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    border-radius: 50px 50px 0 0;
+
+    .text-left {
+      text-align: left;
+    }
+
+    .form-custum.form-control {
+      background: #fff;
+      height: 50px;
+      padding: 7px 15px;
+      border-radius: 2px;
+      border: 1px solid #acacac;
+    }
+
+    .form-custum.form-control::placeholder {
+      text-transform: capitalize;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  }
+
+  .Login-form p {
+    color: $secondary-color;
+  }
+
+  .img-fluidloder {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    left: 50%;
+
+    img {
+      width: 220px;
+    }
+  }
+  .Nodata {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    left: 10%;
+    color: white;
+  }
+
+  .mybutton {
+    background: $btn-color;
+    align-items: center;
+    border: none;
+
+    .signin {
+      font-family: "Source Sans Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 23px;
+    }
+  }
+
+  .eye {
+    position: absolute;
+    right: 25px;
+    top: 12px;
+    color: #c6cbd4;
+  }
+}
+
+.fs-34 {
+  font-size: 34px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.forgot {
+  color: #313131;
+  padding: 20px 0;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* -------------- Dashboard page css ------------*/
+
+.heading_content {
+   p {
+    color: $white-color;
+    font-family: "Source Sans Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
+
+.session {
+  background: $white-color;
+  color: $secondary-color;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.dp {
+  // background: rgba(202, 202, 202, 1);
+  width: 75px;
+  height: 75px;
+  border: 1px solid $white-color;
+  border-radius: 50%;
+
+  img {
+    width: 75px;
+    border-radius: 50%;
+    height: 75px;
+  }
+}
+
+// .round_bg {
+//   position: absolute;
+//   right: 0;
+//   left: 0;
+//   background: $white-color;
+//   margin-top: 50px;
+//   height: 100vh;
+//   border-radius: 35px 35px 0 0;
+// }
+
+.all_cards {
+  position: relative;
+  align-items: center;
+  padding: 10px;
+
+  .two_card {
+    padding: 15px;
+    background: rgb(255 255 255);
+    border-radius: 10px;
+    margin: 6px 0px;
+  }
+
+  .dp1 {
+    width: 73px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: var(--i);
+    border-radius: 50%;
+    img{
+      filter: brightness(0) invert(1);
+      width: 40px;
+      height: 40px;
+      
+    }
+  }
+
+}
+
+
+.single_card {
+  padding: 20px 10px 20px 20px;
+  margin: 0 10px;
+  background: rgba(245, 246, 252, 1) !important;
+}
+
+.single_card p {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  font-family: "Source Sans Pro";
+  padding: 20px 0 0;
+  margin-bottom: 0;
+}
+
+.two_card p {
+  color: #202020;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+  font-family: "Bebas Neue";
+  margin: 15px 0 10px;
+}
+
+.two_card span {
+    color: #292828;
+    font-family: "Source Sans Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+// faculty 
+
+.inst-card.v2 {
+  padding: 7px 8px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-align: left;
+  .inst-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .inst-img-wrapper.v2 {
+      width: 70px;
+      height: 70px;
+      img {
+        width: 100%;
+        height:100%;
+    }
+  }
+  .inst-info {
+    padding-left: 10px;
+    .instname {
+      color: #13287e;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 0px;
+
+  }
+  p {
+    color: #1d68ab;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.inst-details span {
+  color: #13287e;
+  padding-right: 15px;
+  font-weight: 600;
+}
+}
+}
+
+.tcards{
+  height: 79px !important;
+  background-color:rgb(0 39 255 / 7%) !important;
+}
+
+}
+/*------------ Profile page css -------------------- */
+.profile_content{
+  .profile_form{
+    
+  .profile label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a5a5a5;
+  width: 100%;
+  text-align: left;
+  display: flex;
+}
+
+}
+}
+.profiledetails{
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  height: 152px;
+  background:rgb(255 255 255 / 52%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .profiledeaitlsstudent{
+    text-align:left;
+  }
+  
+  
+}
+.Attendance {
+  .heading_content {
+    align-items: center;
+    padding: 7px 0;
+    position: relative;
+    z-index: 5;
+  }
+}
+
+.imageprofile1{
+  margin-right: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  img{
+    object-fit: cover;
+    width:100% ;
+    height:100%;
+    
+  }
+}
+
+.profile .heading_content {
+  align-items: center;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 11;
+}
+
+.profile .heading_right {
+  display: flex;
+  align-items: center;
+}
+
+.profile .session {
+  display: flex;
+  align-items: center;
+  color: $primary-color;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 20px 5px 12px;
+}
+
+.profile .round_bg {
+  margin: 10px 0px 0px;
+}
+
+.profile .dp {
+  width: 75px;
+  height: 75px;
+  border-radius: 15px;
+
+  img {
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+  }
+}
+
+.stu_profile.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #5278c1;
+  margin-top: 18px;
+  border-radius: 15px;
+}
+
+.stu_profile {
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+  }
+}
+
+.profile_detail {
+  padding: 5px 12px;
+}
+
+.profile label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a5a5a5;
+  display: flex;
+}
+
+.profile_form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lock {
+  position: absolute;
+  font-size: 14px;
+  top: 10px;
+  right: 10px;
+  color: #a5a5a5;
+}
+
+/*------------------------ Attendanse page css-----------------*/
+
+.attend_tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .attend_tabs1 {
+    background: $white-color;
+    color: #6688ca;
+    padding: 5px 12px;
+    border-radius: 20px;
+    z-index: 1;
+  }
+
+  .attend_tabs2 {
+    padding: 5px 15px;
+    color: $white-color;
+    background: $primary-bg;
+    border-radius: 0 20px 20px 0;
+    z-index: 0;
+    position: relative;
+  }
+
+  a.attend_tabs2:before {
+    position: absolute;
+    content: "";
+    background: $primary-bg;
+    left: -12px;
+    width: 100%;
+    height: 34px;
+    top: 0;
+    z-index: -1;
+    display: block;
+  }
+}
+
+.background-custum {
+  background: $primary-color;
+}
+
+.Attendance {
+  position: relative;
+
+
+
+  .event {
+    margin-top: 15px;
+  }
+
+  .round_bg {
+    height: auto;
+    background-color: rgb(255, 249, 235);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 3px;
+
+    &.bg-image-bg {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        background-image: url("../images/peak_background.png");
+        background-size: cover;
+        top: 0px;
+        left: 0px;
+        content: "";
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        opacity: 0.1;
+      }
+
+    }
+  }
+
+
+}
+
+.titlecom {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding: 5px 0px;
+}
+
+.enddate,
+.startdate {
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0px 6px;
+  align-items: center;
+
+  small {
+    margin-right: 5px;
+  }
+}
+
+.discriptiondetails h6 {
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 5px;
+}
+
+.pl-0 {
+  padding-left: 0px !important;
+}
+
+.desc {
+  border: 1px solid #ccc;
+  margin: 0px 4px;
+  text-align: left;
+  font-size: 10px;
+  padding: 5px 10px 0px;
+  color: #8b8585;
+  border-radius: 2px;
+}
+
+.padding-bottom-7 {
+  padding-bottom: 7px;
+}
+
+.p-0 {
+  padding: 0px !important
+}
+
+.pn-5 {
+  padding: 5px !important;
+}
+
+.schoolnotification {
+  white-space: nowrap;
+}
+
+.nav.nav-tabs {
+  border: none;
+}
+
+.react-calendar {
+  width: 100%;
+  border-radius: 35px;
+  border: none;
+  font-family: "Source Sans Pro" !important;
+
+  .react-calendar__navigation__label__labelText {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.absent-mark{
+  border-radius: 50%;
+  background: red;
+  color: white;
+  max-width: 40px;
+  padding: 4px 9px;
+  margin: auto !important;
+}
+
+.present-mark{
+  border-radius: 50%;
+  background: green;
+  color: white;
+  max-width: 40px;
+  padding: 4px 9px;
+  margin: auto !important;
+}
+
+.react-calendar__tile--active {
+  border-radius: 50%;
+  background: #006edc;
+  max-width: 40px;
+  margin: auto !important;
+}
+
+.react-calendar__tile--now {
+  background: #a4e1f2;
+}
+.round_red {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffb1b1;
+  display: flex;
+  justify-content: center;
+  color: red;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.absent.card {
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 8px 14px;
+  border: 1px solid red;
+  border-left: 16px solid red;
+}
+
+.festive.card {
+  border: 1px solid green;
+  border-left: 16px solid green;
+  margin-bottom: 10px;
+}
+
+.round_red.green {
+  background: #a9f2a4;
+  color: green;
+}
+
+abbr[title] {
+  text-decoration: none !important;
+}
+
+
+
+/*------------------------ Holiday page css -----------------*/
+
+.holiday {
+  .studentprofile {
+    box-shadow: inset 0 0 5px #0009;
+    border-radius: 6px;
+    background: #fff;
+    overflow:hidden;
+    margin-top: 15px;
+    .padding_side{
+      padding:10px;
+    }
+
+    .student_name {
+      text-align: left;
+      margin-left: 11px;
+      text-transform: capitalize;
+
+      h4 {
+        font-size: 15px;
+
+        span {
+          color: #ccc;
+          font-size: 11px;
+          display: block
+        }
+      }
+    }
+    .contactnumber{
+      display: flex;
+
+      h5{
+        font-size:15px;
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+.bg-blue_custum{
+  background-color: #009ae0;
+  .contactnumber{
+    padding:10px;
+    h5{
+      color:#fff;
+    }
+  }
+  .contactnumber:nth-child(2){
+    border-right:1px solid #fff;
+    border-left:1px solid #fff;
+  }
+}
+    .imgagestduent {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .width-image-festival {
+    width: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  .margin-left-25 {
+    margin-left: 11px;
+    width: 100%;
+    text-align: left;
+
+    h3 {
+      text-transform: capitalize;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .datetime {
+      p {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .attend_tabs1 {
+    background: $primary-bg;
+    color: $white-color;
+    position: relative;
+    z-index: 0;
+  }
+
+  .attend_tabs2 {
+    background: $white-color;
+    color: #6688ca;
+    border-radius: 20px;
+  }
+
+  a.attend_tabs2:before {
+    display: none;
+  }
+
+  a.attend_tabs1:before {
+    position: absolute;
+    content: "";
+    background: $primary-bg;
+    left: 25px;
+    width: 100%;
+    height: 34px;
+    top: 0;
+    z-index: -1;
+  }
+
+  .two_option h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .holiday_list {
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+
+    .list {
+      display: flex;
+      align-items: end;
+
+      p:nth-child(2) {
+        color: $secondary-color;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+
+      span {
+        font-size: 14px;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .event {
+    width: 100%;
+    margin: 0;
+
+    .fastive_day {
+      color: #3a3a3a;
+      font-weight: 600;
+    }
+  }
+}
+
+// ------------Fee page css--------------
+
+.fee {
+  .fees_details {
+
+    h2 {
+      text-align: left;
+      padding: 0px;
+      font-size: 18px;
+      color: #010101;
+    }
+
+    .totalpending {
+      color: #6f6f6f
+    }
+
+    .totalpending,
+    h3 {
+      font-size: 15px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      color: #6d6d6d;
+    }
+
+    .mybutton {
+      color: #ffffff;
+      border: none;
+      padding: 4px !important;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  }
+
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .fee_card {
+    border-radius: 10px;
+    // background: #f1f3ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease;
+    transition: transform 0.3s ease;
+  }
+
+  .fee_card:hover {
+    transform: scale(1.05);
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .due_fees {
+    margin-top: 16px;
+    .header_custum{
+      background: $primary-color;
+      color: #fff;
+    }
+    .fees_details{
+      padding: 15px;
+      border-bottom: 1px solid #cccccc47;
+}
+    .mybutton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 7px;
+      padding: 6px 19px;
+      border: none;
+      margin: 10px 0px;
+    svg{
+    font-size:10px;
+    }
+    }
+
+    .fee_card {
+      padding: 10px;
+
+      table {
+        tr:nth-child(1) {
+          td {
+            padding-top: 0;
+          }
+        }
+
+        tr:nth-child(2) td {
+          border-bottom: none;
+        }
+
+        td {
+          color: $secondary-color;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        td:nth-child(2) {
+          color: $dark-secondary-color;
+          font-weight: 600;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+// ----------Pay online Page css-------
+
+.Pay_online {
+  .thead-primary{
+    th{
+      background-color: $primary-color;
+      font-size: 11px;
+      padding: 2px;
+      border-right:1px solid #0101011f;
+      color:#fff;
+    }
+  }
+  tbody{
+    td{
+      font-size: 10px;
+      border-right:1px solid #0101011f;
+      padding: 2px;
+    }
+  }
+  tfoot{
+    td{
+      font-size: 10px;
+      border-right:1px solid #0101011f;
+      padding: 2px;
+    }
+  }
+  .mybutton {
+    margin-top: 150px;
+  }
+  .downloadpdf{
+    margin:10px 0px;
+    .pdfbtn{
+      box-shadow: none;
+      border: none;
+      background: #009ae0;
+      color: #fff;
+      border-radius: 7px;
+      padding: 2px 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      svg{
+        font-size:10px;
+      }
+    }
+  }
+}
+
+//------------ Assignment page css--------------------
+
+.Assignment {
+  .subject {
+    background-color: $light-primary-bg;
+    color: $primary-color;
+    font-size: 14px;
+    padding: 2px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
+  tr {
+    th {
+      font-size: 12px;
+      padding: 0.5rem;
+      font-weight: 500;
+    }
+
+    td,
+    th {
+      border: 0;
+    }
+  }
+
+  .due_fees {
+    .fee_card {
+      padding-bottom: 16px;
+    }
+
+    .submit {
+      padding: 0 0.5rem;
+      display: block;
+
+      .mybutton {
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
+//------------ Timetable page css--------------------
+
+.Timetable {
+  .days {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e1e3e8;
+    border-radius: 20px;
+
+    .single_day {
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .active_day {
+      background: $tab-btn-bg;
+      color: $white-color;
+      border: 1px solid #6789ca;
+    }
+  }
+
+  .due_fees {
+    .fee_card {
+      padding: 10px 15px;
+
+      table tr:nth-child(2) td {
+        border-top: 1px solid #dbdbdb;
+      }
+    }
+  }
+}
+
+//------------ Quiz page css--------------------
+
+.Spinner {
+  border: 4px solid rgba(248, 245, 245, 0.1);
+  border-left: 4px solid #f5f1f1;
+  border-radius: 50%;
+  margin-left: 500px;
+  width: 90px;
+  height: 90px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Quiz.App {
+  .skip {
+    text-align: right;
+    font-size: 18px;
+    color: $white-color;
+  }
+
+  .next {
+    float: right;
+    font-size: 18px;
+    color: $white-color;
+    cursor: pointer;
+  }
+
+  .prev {
+    float: left;
+    font-size: 18px;
+    color: $white-color;
+    cursor: pointer;
+  }
+
+  .chivpre {
+    margin-top: -6px;
+  }
+
+  .timer {
+    background: #05518b;
+    border: 2px solid #05518b;
+    border-radius: 20px;
+    margin: 25px 0;
+    position: relative;
+
+    .remaining_time {
+      background: #46d9bf;
+      color: $white-color;
+      font-size: 14px;
+      border-radius: 20px;
+      width: 50%;
+      padding: 5px 20px;
+    }
+
+    .lock {
+      font-size: 25px;
+      font-weight: 700;
+      top: 4px;
+      right: 4px;
+      color: $white-color;
+    }
+  }
+
+  .question {
+    color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 2px dashed;
+    margin-bottom: 28px;
+
+    .number {
+      p {
+        font-size: 30px;
+        display: inline-block;
+      }
+
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .Total_number {
+      display: flex;
+      align-items: center;
+      padding: 8px 15px;
+      background: $tab-btn-bg;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+  }
+
+  .quiz_box {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    z-index: 1;
+
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .option {
+      p {
+        color: #989898;
+        padding: 0 15px;
+      }
+
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #c1c1c1;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 20px;
+
+      span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #c1c1c1;
+      }
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+
+    .right_option {
+      // border-color: #6ac259;
+      font-weight: 700;
+      background: #6ac2591a;
+      color: #6ac259;
+
+      p {
+        color: #4b4949;
+      }
+
+      svg {
+        top: -7px;
+        right: 2px;
+        position: relative;
+      }
+    }
+
+    .wrong_option {
+      border-color: #e92e30;
+      font-weight: 700;
+      background: #e92e301a;
+      color: #e92e30;
+
+      p {
+        color: #e92e30;
+      }
+
+      svg {
+        top: -7px;
+        right: 2px;
+        position: relative;
+      }
+    }
+  }
+
+  .quiz_box:after {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 15px;
+    background: #859fd1;
+    bottom: -16px;
+    border-radius: 0 0 20px 20px;
+    z-index: -1;
+    right: 5%;
+  }
+
+  .quiz_box:before {
+    position: absolute;
+    content: "";
+    width: 84%;
+    height: 15px;
+    background: #859fd147;
+    bottom: -30px;
+    border-radius: 0 0 20px 20px;
+    z-index: -1;
+    right: 8%;
+  }
+}
+
+.modal.instruction {
+  .modal-header,
+  .modal-footer {
+    padding: 8px 16px;
+    Button {
+      background: $bg-color;
+    }
+  }
+  .modal-body {
+    padding: 5px;
+  }
+  .quiz_btn1 {
+    background-color: #446cbb; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+}
+.btn_quiz {
+  background: $primary-color;
+  color: $white-color;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+// ----------------------- Quiz course page css ------------------
+
+.QuizCourse {
+  .quiz_box.card {
+    .quiz_course {
+      h5 {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.Quizlist {
+  .quiz_List {
+    .list {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      text-decoration: none;
+
+      .quiz_name {
+        h6 {
+          font-weight: 600;
+        }
+
+        p,
+        span {
+          font-size: 14px;
+          color: $secondary-color;
+        }
+      }
+
+      .quiz_btn {
+        .mybutton {
+          color: $white-color;
+          padding: 5px 8px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+// ----------------------   Page css --------------------
+
+.z-index-1{
+  z-index:1
+}
+.Result {
+
+  .share {
+    font-size: 20px;
+    color: $white-color;
+  }
+
+  .round_bg {
+    margin-top: -25px;
+    height: auto;
+  }
+
+  .heading_content {
+    background: url(../images/background.png) no-repeat center;
+    background-size: 100% 100%;
+    p{
+      font-size:20px;
+    }
+    .score_box {
+      text-align: center;
+
+      .score {
+        position: relative;
+        display: inline-block;
+
+        .grade {
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          color: #000;
+          transform: translate(-50%, -50%);
+        }
+
+        span {
+          font-size: 40px;
+          line-height: 40px;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+
+  .stu_name {
+    margin: 20px 0 0px;
+    color: #000;
+    text-align: center;
+    span {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+
+  .mybutton {
+    margin-top: 12px;
+    background: #c2d7f2 !important;
+    font-size: 13px;
+    padding: 5px 10px !important;
+    color: #3d3d3d !important;
+
+  }
+
+  .result.card {
+    .result_card {
+      #myTable {
+        tr {
+          th {
+            background: #5479c2;
+            color: #fff;
+            border: 1px solid #fff;
+          }
+        }
+      }
+
+      th {
+        color: #28224B;
+        font-size: 12px;
+        font-family: Roboto;
+        font-weight: 700;
+        line-height: 18px;
+        word-wrap: break-word;
+        font-family: sans-serif
+      }
+
+      td {
+        color: #666666;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.04px;
+        word-wrap: break-word;
+      }
+
+      tr {
+        border: 1px solid rgba(0, 0, 0, 0.12)
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td,
+      th {
+        border-top: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+
+      }
+
+      // table {
+      //   td {
+      //     border: none;
+      //     font-size: 14px;
+      //     background: none;
+      //   }
+      //   td:first-child {
+      //     width: 50%;
+      //     padding-left: 15px;
+      //   }
+      //   td:nth-child(2) {
+      //     background: $light-primary-bg;
+      //     width: 25%;
+      //     text-align: center;
+      //     font-weight: 600;
+      //   }
+      //   td:last-child {
+      //     background: #6ac2591a;
+      //     width: 25%;
+      //     text-align: center;
+      //     font-weight: 700;
+      //   }
+      // }
+    }
+  }
+
+  .download {
+    button {
+      font-size: 14px;
+      font-weight: 600;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 60%;
+      margin: 25px auto;
+      padding: 10px;
+    }
+  }
+}
+
+// ------------Datesheet page css------------
+
+.Datesheet {
+  .sheet {
+    padding: 20px;
+
+    .date_sheet:last-child .border_second {
+      border-bottom: 1px solid #dbdbdb;
+    }
+
+    .date_sheet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .border_second {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #dbdbdb;
+        width: 100%;
+        padding: 10px;
+      }
+
+      .date {
+        width: 20%;
+
+        p {
+          font-size: 26px;
+          line-height: 23px;
+          color: $dark-secondary-color;
+            }
+
+        span {
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+
+      .subject {
+        p {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        span {
+          font-size: 12px;
+          color: #a5a5a5;
+        }
+      }
+
+      .time {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        color: #a5a5a5;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.bottom_bg {
+  background: url(../svg/vector_design.svg) no-repeat bottom;
+  padding-bottom: 225px;
+  background-size: contain;
+}
+
+// ------------ Doubt PaGE CSS -----------------------------
+
+.bg-image-footer {
+  position: relative;
+
+  // &:before {
+  //   background: url(../svg/vector_design.svg) no-repeat bottom;
+  //   padding-bottom: 0px;
+  //   background-size: contain;
+  //   position: absolute;
+  //   height: 100%;
+  //   width: 100%;
+  //   bottom: 0px;
+  //   left: 0px;
+  //   content: "";
+  // }
+
+  .container {
+    position: relative;
+    z-index: 9;
+
+    .mybutton {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+  }
+
+}
+
+.ask_doubt {
+  label {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+    color: #000;
+  }
+
+  .form-custum-new {
+    padding: 9px;
+  }
+
+  select {
+    border-radius: 3px;
+    padding: 9px;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 16px;
+    font-weight: 400;
+    color: #252525;
+
+  }
+
+  .mybutton {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+  }
+}
+
+// --------------- Leave Application page css ---------------
+
+.Application {
+  .textarea {
+    height: 100px;
+  }
+}
+
+//------------------------ Gallery page css -------------------
+
+.gallery {
+  .round_bg {
+    padding: 20px;
+
+    .images {
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+//---------------------- Event page Css ----------------------
+
+.Event {
+  .event {
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 20px;
+
+    h6 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .event-box {
+      display: flex;
+      align-items: center;
+
+      .dp {
+        min-width: 75px;
+      }
+    }
+
+    .event_detail {
+      padding: 0 8px;
+
+      .date {
+        font-size: 13px;
+        font-weight: 600;
+        color: $primary-color;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+
+      p {
+        font-size: 13px;
+        color: $secondary-color;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+//-------------- EventDetail page css ---------------
+
+.EventDetail {
+  .heading_content {
+    background: url(../images/school_img.jpg) no-repeat top;
+    background-size: cover;
+    padding-bottom: 200px;
+  }
+
+  .round_bg {
+    border-radius: 0;
+
+    .event {
+      .date {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 600;
+        color: $primary-color;
+        padding: 15px 0 8px;
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+
+      h6 {
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 400;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+//-------------------- Support page css ---------------
+
+.Support {
+  .support_img {
+    margin: 120px 20px 100px;
+    text-align: center;
+
+    h5 {
+      font-size: 24px;
+      color: #313131;
+      margin: 40px 10px 20px;
+    }
+
+    p {
+      margin: auto 48px;
+      color: #a5a5a5;
+    }
+
+    .support_down {
+      padding: 100px 10px 30px;
+
+      .call {
+        color: #313131;
+        font-size: 16px;
+
+        a {
+          color: #313131;
+        }
+      }
+
+      span {
+        a {
+          color: #313131;
+        }
+      }
+    }
+  }
+}
+
+
+/*-------- 12-01-2024----------------*/
+
+.notiParent {
+  margin-top: 20px;
+}
+
+.image-container {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.info-container {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.titlecom {
+  color: #333333;
+}
+
+// ==================> Responsive css Start <=========================
+
+@media screen and (max-width: 767.5) {}
+
+@media screen and (max-width: 575.5) {}
+
+@media screen and (max-width: 424.5) {}
+
+@media screen and (max-width: 360px) {
+  .two_card {
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .single_card {
+    padding: 20px 10px;
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .Timetable {
+    .days {
+      .single_day {
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .timeTable {
+    border-collapse: initial;
+    border: 3px solid;
+    margin: 10px 0;
+  }
+  
+  .timeTable tr td {
+    background: #efefef;
+    border-bottom: 0 !important;
+    padding: 10px 15px;
+  }
+
+  .Timetable {
+    .days {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #e1e3e8;
+      border-radius: 20px;
+      background: #fff;
+      padding: 5px;
+      margin-top: 5px;
+      .single_day {
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .active_day {
+        background: $tab-btn-bg;
+        color: $white-color;
+        border: 1px solid #6789ca;
+      }
+    }
+    .due_fees {
+      .fee_card {
+        padding: 10px 15px;
+        table tr:nth-child(2) td {
+          border-top: 1px solid #dbdbdb;
+        }
+      }
+    }
+  }
+
+  .form-control {
+    font-size: 0.8rem !important;
+  }
+
+  .App {
+    .eye {
+      top: 14px;
+    }
+  }
+}
+
+.bg-bottom-image {
+  position: relative;
+
+  &:before {
+    background: url(../svg/vector_design.svg) no-repeat bottom;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 210px) {
+  .two_card {
+    p {
+      font-size: 30px;
+    }
+  }
+  .single_card {
+    padding: 20px 10px;
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .Timetable {
+    .days {
+      .single_day {
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .form-control {
+    font-size: 0.8rem !important;
+  }
+
+  .App {
+    .eye {
+      top: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .stuImg {
+    width: 95px;
+  }
+  .stuImg img {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+.react-calendar {
+  width: 100%;
+  margin-top: 75px;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .stuImg {
+    width: 95px;
+  }
+  .stuImg img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .stuImg {
+    width: 95px;
+  }
+  .stuImg img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .stuImg {
+    width: 95px;
+  }
+  .stuImg img {
+    width: 100%;
+  }
+
+  .timeTable tr td {
+    padding: 5px !important;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .stuImg {
+    width: 95px;
+  }
+  .stuImg img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .stuImg {
+    width: 95px;
+  }
+  .stuImg img {
+    width: 100%;
+  }
+  .two_card {
+    p {
+      font-size: 30px;
+    }
+  }
+  .single_card {
+    padding: 20px 10px;
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .Timetable {
+    .days {
+      .single_day {
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .form-control {
+    font-size: 0.8rem !important;
+  }  
+
+  .App {
+    .eye {
+      top: 0;
+    }
+  }
+}
+
+
+
+
+
+

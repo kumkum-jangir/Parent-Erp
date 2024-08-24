@@ -1,0 +1,167 @@
+body {
+  font-family: "Source Sans Pro";
+  overflow-x: hidden;
+  }
+.forgetpassword .forgetpsw{
+  font-size: 14px;
+  text-align: right;
+  color: #03A9F4;
+  margin-bottom: 10px;
+}
+.signregister{
+  margin-top:10px;
+}
+.forgetpsw{
+  font-size: 14px;
+  text-align: right;
+  color: #fff;
+
+}
+.accountdetails{
+  font-size: 14px;
+  color: #010101;
+  font-weight: 400;
+  margin-bottom:15px;
+}
+.sign_up_btn{
+  font-size: 14px;
+  text-align: right;
+  color: #03A9F4;
+}
+  .sign {
+    background: url('../images/Loginss.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 15px 15px 0;
+  }
+  input.form-control:hover,
+  input.form-control:focus,
+  input.form-control:active{
+    box-shadow:none;
+
+  }
+
+  h4.loginschool {
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  a.forgetpsw {
+    color: #1e1e1e;
+    text-decoration: none;
+  }
+
+  .form-check {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .sign .education-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  .new_body {
+    overflow-x: hidden;
+    overflow-y:hidden;
+  }
+
+  .sign_in {
+    margin: 40px;
+  }
+
+  @media screen and (max-width:640px) {
+    .sign_in {
+      margin: 10px;
+    }
+  }
+
+  .btn-color-custum {
+    background: #009ae0!important;
+    color:#fff!important;
+  }
+
+  
+
+  .fs_top {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0 55px;
+    text-align: left;
+  }
+
+  .fs_top span {
+    font-weight: 600;
+  }
+
+  .sign p {
+    padding: 0 55px;
+  }
+
+  .logo2 {
+    height: 80px;
+  }
+
+  .password-container {
+    position: relative;
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .shapes {
+    position: absolute;
+    z-index: 0;
+  }
+
+  .shapes.s1 {
+    top: -72px;
+    left: 22%;
+    width: 150px;
+  }
+
+  .shapes.s2 {
+    bottom: -65px;
+    left: -15%;
+    width: 250px;
+    filter: opacity(0.5);
+  }
+
+  .shapes.s3 {
+    bottom: -10px;
+    right: -18%;
+    width: 250px;
+    filter: grayscale(0.5);
+  }
+.form-control-login{
+  height:45px;
+}
+  .eye {
+    position: absolute;
+    right: 9px;
+    top: 15px !important;
+    font-size: 18px;
+   
+  }
+  .width_logo{
+    width: 100px;
+    height:100px
+  }
+  .width_logo img{
+    width:100%;
+    height:100%;    
+    object-fit: contain;
+  }
